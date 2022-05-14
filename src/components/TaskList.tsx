@@ -26,13 +26,13 @@ export function TaskList() {
     } else {
       let createRandomId = Math.random() * (9999 - 1) + 1
       createRandomId = Math.ceil(createRandomId)
-      let obj = {
+      let newTask = {
         id: createRandomId,
 
         title: newTaskTitle,
         isComplete: false,
       }
-      setTasks([...tasks, obj])
+      setTasks([...tasks, newTask])
     }
   }
 
